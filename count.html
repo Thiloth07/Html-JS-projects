@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="textBox"></label><input id="textBox" type="text">
+    <button id="count" onclick="count()">Count</button>
+    <h1 id="result"></h1>  
+    <script>
+        function count(){
+            let content = document.getElementById("textBox").value
+            let thilo = content.split(' ')// CONVERT THE WORDS INTO AN ARRAY
+            let output = document.getElementById("result")
+            output.innerHTML = thilo.length //GIVES THE LENGTH OF ARRAY
+        }    
+        </script> 
+</body>
+</html>
