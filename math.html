@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/sym.jpg">
+        <link rel="stylesheet" href="index.css">
+        <title>Thiloth's Webpage</title>
+    </head>
+    <body>
+        <h1>Welcome to Thiloth's Webpage</h1><hr><br>
+     <h2>Task : 4 To perform a math operations on two numbers</h2><hr><br>
+        <label for="noX"> Enter the 1st number: </label><input type="number" id="noX"><br><br>
+        <label for="noY">Enter the 2nd number: </label><input type="number" id="noY"><br><br>
+        <button id="addBtn" >Add</button>
+        <button id="subBtn">Subtract</button>
+        <button id="mulBtn">Multiply</button>
+        <button id="divBtn">Divide</button>
+        <h2 id="resultSum"></h2>
+        <script src="script.js">
+    
+    document.getElementById("addBtn").onclick = function(){
+        let num1 = parseInt(document.getElementById("noX").value);
+        let num2 = parseInt(document.getElementById("noY").value);
+        document.getElementById("resultSum").innerText = num1 + num2;}
+    
+        document.getElementById("subBtn").onclick = function(){ 
+        let num1 = parseInt(document.getElementById("noX").value);
+        let num2 = parseInt(document.getElementById("noY").value);
+        document.getElementById("resultSum").innerText = num1 - num2;}
+    
+        document.getElementById("mulBtn").onclick = function(){
+        let num1 = parseInt(document.getElementById("noX").value);
+        let num2 = parseInt(document.getElementById("noY").value);
+        document.getElementById("resultSum").innerText = num1 *num2;}
+        document.getElementById("divBtn").onclick = function(){
+        let num1 = parseInt(document.getElementById("noX").value);
+        let num2 = parseInt(document.getElementById("noY").value);
+        document.getElementById("resultSum").innerText = num1 / num2;}
+    
+    </script>
